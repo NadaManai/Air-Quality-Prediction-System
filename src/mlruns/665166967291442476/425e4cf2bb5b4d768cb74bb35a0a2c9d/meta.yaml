@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Mega-Pc/Freelance/Air Quality Prediction and Alert
+  System/src/mlruns/665166967291442476/425e4cf2bb5b4d768cb74bb35a0a2c9d/artifacts
+end_time: 1762338628428
+entry_point_name: ''
+experiment_id: '665166967291442476'
+lifecycle_stage: active
+run_id: 425e4cf2bb5b4d768cb74bb35a0a2c9d
+run_name: learned-hare-293
+run_uuid: 425e4cf2bb5b4d768cb74bb35a0a2c9d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762338542261
+status: 3
+tags: []
+user_id: Asus Nada

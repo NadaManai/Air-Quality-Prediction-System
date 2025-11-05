@@ -1,0 +1,7 @@
+artifact_location: file:///C:/Users/Mega-Pc/Freelance/Air Quality Prediction and Alert
+  System/src/mlruns/665166967291442476
+creation_time: 1762333113379
+experiment_id: '665166967291442476'
+last_update_time: 1762333113379
+lifecycle_stage: active
+name: XGBoost_Optuna_Tuning
