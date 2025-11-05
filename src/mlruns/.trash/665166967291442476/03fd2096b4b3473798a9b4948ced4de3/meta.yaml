@@ -1,0 +1,17 @@
+artifact_uri: file:///C:/Users/Mega-Pc/Freelance/Air Quality Prediction and Alert
+  System/src/mlruns/665166967291442476/03fd2096b4b3473798a9b4948ced4de3/artifacts
+deleted_time: 1762340664162
+end_time: 1762335432173
+entry_point_name: ''
+experiment_id: '665166967291442476'
+lifecycle_stage: deleted
+run_id: 03fd2096b4b3473798a9b4948ced4de3
+run_name: learned-seal-177
+run_uuid: 03fd2096b4b3473798a9b4948ced4de3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762335332956
+status: 3
+tags: []
+user_id: Asus Nada

@@ -1,0 +1,7 @@
+artifact_location: file:///C:/Users/Mega-Pc/Freelance/Air Quality Prediction and Alert
+  System/src/mlruns/605794794966700757
+creation_time: 1762340698679
+experiment_id: '605794794966700757'
+last_update_time: 1762340698679
+lifecycle_stage: active
+name: XGBoost_Training

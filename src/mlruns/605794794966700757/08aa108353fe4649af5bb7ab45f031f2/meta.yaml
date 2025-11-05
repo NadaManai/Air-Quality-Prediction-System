@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/Mega-Pc/Freelance/Air Quality Prediction and Alert
+  System/src/mlruns/605794794966700757/08aa108353fe4649af5bb7ab45f031f2/artifacts
+end_time: 1762344697813
+entry_point_name: ''
+experiment_id: '605794794966700757'
+lifecycle_stage: active
+run_id: 08aa108353fe4649af5bb7ab45f031f2
+run_name: Optuna_XGB_Tuning
+run_uuid: 08aa108353fe4649af5bb7ab45f031f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762340699631
+status: 3
+tags: []
+user_id: Asus Nada
