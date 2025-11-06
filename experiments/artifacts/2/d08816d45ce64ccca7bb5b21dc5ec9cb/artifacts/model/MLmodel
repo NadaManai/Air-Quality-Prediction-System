@@ -1,0 +1,19 @@
+artifact_path: model
+flavors:
+  lightgbm:
+    code: null
+    data: model.pkl
+    lgb_version: 4.6.0
+    model_class: lightgbm.sklearn.LGBMRegressor
+  python_function:
+    data: model.pkl
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.lightgbm
+    python_version: 3.11.11
+mlflow_version: 2.16.0
+model_size_bytes: 2950458
+model_uuid: d53478418e174399acf574c398f56349
+run_id: d08816d45ce64ccca7bb5b21dc5ec9cb
+utc_time_created: '2025-11-06 11:35:10.479037'
