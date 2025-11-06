@@ -6,7 +6,7 @@ import pandas as pd
 app = FastAPI(title="Air Quality Prediction API")
 
 # load the model
-with open("models/xgboost_model.pkl", "rb") as f:
+with open("Models/xgboost_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 @app.get("/")
