@@ -2,6 +2,6 @@ fastapi
 uvicorn
 pandas
 joblib
-xgboost
+xgboost==3.0.5
 prometheus_client
 httpx
