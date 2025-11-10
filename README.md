@@ -49,7 +49,7 @@ The main goals of this project are:
 | Data Processing     | Python, Pandas, NumPy, Scikit-learn           |
 | Modeling            | XGBoost, LightGBM, TensorFlow/Keras (LSTM, BiLSTM) |
 | Experiment Tracking | MLflow, PostgreSQL                             |
-| Deployment          | Docker, CI/CD (GitHub Actions / Jenkins)      |
+| Deployment          | Docker, CI/CD (GitHub Actions)      |
 | Monitoring          | Prometheus, Grafana                            |
 
 ## ⚡ Installation & Setup
