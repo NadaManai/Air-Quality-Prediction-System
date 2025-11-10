@@ -33,13 +33,13 @@ The main goals of this project are:
 ## 📊 Screenshots
 
 ### MLflow Experiment Tracking
-![MLflow Screenshot](path/to/mlflow_screenshot.png)
+![MLflow Screenshot](https://github.com/NadaManai/Air-Quality-Prediction-System/blob/main/screenshots/mlflow.PNG)
 
 ### Prometheus Metrics Collection
-![Prometheus Screenshot](path/to/prometheus_screenshot.png)
+![Prometheus Screenshot](https://github.com/NadaManai/Air-Quality-Prediction-System/blob/main/screenshots/prometheus_screenshot.PNG)
 
 ### Grafana Dashboard
-![Grafana Screenshot](path/to/grafana_screenshot.png)
+![Grafana Screenshot](https://github.com/NadaManai/Air-Quality-Prediction-System/blob/main/screenshots/grafana.PNG)
 
 
 ## 🛠️ Tech Stack
