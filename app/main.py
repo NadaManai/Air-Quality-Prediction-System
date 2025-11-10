@@ -47,6 +47,21 @@ REQUEST_LATENCY = Histogram(
     ["endpoint"]
 )
 
+# AQI category counters
+AQI_HEALTHY = Counter("predictions_healthy", "Predictions with Healthy AQI")
+AQI_UNHEALTHY = Counter("predictions_unhealthy", "Predictions with Unhealthy AQI")
+AQI_HAZARDOUS = Counter("predictions_hazardous", "Predictions with Hazardous AQI")
+
+# Function to categorize AQI
+def aqi_category(aqi):
+    if aqi <= 50:
+        return "healthy"
+    elif aqi <= 100:
+        return "unhealthy"
+    else:
+        return "hazardous"
+
+
 # -----------------------------
 # Health endpoint
 # -----------------------------
@@ -83,6 +98,15 @@ def predict(features: dict, request: Request):
         ).inc()
         REQUEST_LATENCY.labels(endpoint=request.url.path).observe(duration)
 
+        # Update AQI category counters
+        category = aqi_category(prediction)
+        if category == "healthy":
+            AQI_HEALTHY.inc()
+        elif category == "unhealthy":
+            AQI_UNHEALTHY.inc()
+        else:
+            AQI_HAZARDOUS.inc()
+
         return {"AQI_prediction": float(prediction)}
     
     except Exception as e:
@@ -92,6 +116,7 @@ def predict(features: dict, request: Request):
             status="500"
         ).inc()
         return {"error": str(e)}
+
 
 # -----------------------------
 # Metrics endpoint for Prometheus
