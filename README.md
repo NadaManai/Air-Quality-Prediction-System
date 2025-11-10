@@ -7,7 +7,7 @@
 
 Predict air quality in Beijing using **machine learning** and **deep learning** techniques. This project demonstrates the full **MLOps lifecycle**, from data exploration and preprocessing to modeling, deployment, tracking, and monitoring.
 
-Air pollution is a pressing concern in urban areas. This project predicts **PM2.5 levels** and other air quality metrics using the historical **Beijing Air Quality Dataset** from Kaggle. The workflow includes data exploration, cleaning, feature engineering, model training, deployment, experiment tracking, and real-time monitoring.
+Air pollution is a pressing concern in urban areas. This project predicts **Air Quality Index** using the historical **Beijing Air Quality Dataset** from Kaggle. The workflow includes data exploration, cleaning, feature engineering, model training, deployment, experiment tracking, and real-time monitoring.
 
 ## 🚀 Project Overview
 
