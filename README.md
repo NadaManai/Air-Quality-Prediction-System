@@ -41,7 +41,6 @@ The main goals of this project are:
 ### Grafana Dashboard
 ![Grafana Screenshot](path/to/grafana_screenshot.png)
 
-> *Replace `path/to/...` with actual image paths in your repository.*
 
 ## 🛠️ Tech Stack
 
