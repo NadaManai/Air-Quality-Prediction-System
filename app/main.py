@@ -7,7 +7,7 @@ from prometheus_client import Counter, Histogram, Gauge, generate_latest, CONTEN
 app = FastAPI(title="Air Quality Prediction API")
 
 # -----------------------------
-# Load ML model
+# load ML model
 # -----------------------------
 with open("Models/xgboost_model.pkl", "rb") as f:
     model = pickle.load(f)
@@ -63,21 +63,21 @@ def aqi_category(aqi):
 
 
 # -----------------------------
-# Health endpoint
+# health endpoint
 # -----------------------------
 @app.get("/health")
 def health():
     return {"status": "ok"}
 
 # -----------------------------
-# Home endpoint
+# home endpoint
 # -----------------------------
 @app.get("/")
 def home():
     return {"message": "Air Quality Prediction API is running!"}
 
 # -----------------------------
-# Prediction endpoint
+# prediction endpoint
 # -----------------------------
 @app.post("/predict")
 def predict(features: dict, request: Request):
@@ -97,8 +97,6 @@ def predict(features: dict, request: Request):
             status="200"
         ).inc()
         REQUEST_LATENCY.labels(endpoint=request.url.path).observe(duration)
-
-        # Update AQI category counters
         category = aqi_category(prediction)
         if category == "healthy":
             AQI_HEALTHY.inc()
@@ -119,7 +117,7 @@ def predict(features: dict, request: Request):
 
 
 # -----------------------------
-# Metrics endpoint for Prometheus
+# metrics endpoint for Prometheus
 # -----------------------------
 @app.get("/metrics")
 def metrics():
