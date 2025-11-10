@@ -2,7 +2,7 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY app/main.py ./
+COPY app/main.py ./app/
 COPY Models/xgboost_model.pkl ./Models/
 COPY requirements.txt ./
 
